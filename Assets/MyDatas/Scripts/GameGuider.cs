@@ -22,7 +22,7 @@ public class GameGuider : MonoBehaviour {
     void Start () {
         _gm = GameManager.instance;
 
-        _textForUI = transform.GetChild(0).GetChild(0).GetComponent<Text>();
+        _textForUI = transform.GetChild(0).GetComponent<Text>();
         _text = _textFile[_gm.Quest - 1].text;
         StartCoroutine(AutoType());
 		
@@ -34,6 +34,11 @@ public class GameGuider : MonoBehaviour {
             _textForUI.text += letter;
             yield return new WaitForSeconds(_typingSpeed);
         }
+    }
+
+    void Update()
+    {
+
     }
 
 }

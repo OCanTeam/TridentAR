@@ -19,7 +19,7 @@ public class SceneScript : MonoBehaviour {
     private string _loadSceneName;
 
     private GameManager _gm;
-    private int _sceneNum;
+    //private int _sceneNum;
 
     private void Awake()
     {
